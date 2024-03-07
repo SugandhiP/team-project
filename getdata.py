@@ -1,11 +1,34 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request, Response
 from pymongo import MongoClient 
 from bson.json_util import dumps
 from collections import defaultdict
 import certifi
 import json
+from flask_swagger_ui import get_swaggerui_blueprint
 
 app = Flask(__name__)
+
+# Configure Swagger UI
+SWAGGER_URL = '/swagger'
+API_URL = 'http://localhost:5000/swagger.json'
+swaggerui_blueprint = get_swaggerui_blueprint(
+    SWAGGER_URL,
+    API_URL,
+    config={
+        'app_name': "Sample API"
+    }
+)
+app.register_blueprint(swaggerui_blueprint, url_prefix=SWAGGER_URL)
+
+# construct an error response object
+def error_response(code, message):
+    print(code)
+    print(message)
+    return Response(json.dumps({"error": message}), status=code, mimetype="application/json")
+
+# construct a success response object
+def sucess_response(code, content):
+    return Response(json.dumps(content), status=code, mimetype="application/json")
 
 # Connect to MongoDB
 try: 
@@ -20,7 +43,14 @@ db = conn.swa_address_search_engine
 # Created or Switched to collection names: myTable 
 collection = db.address_collection      
 
+
+@app.route('/swagger.json')
+def swagger():
+    with open('swagger.json', 'r') as f:
+        return jsonify(json.load(f))
+
 @app.route('/api/data', methods=['GET'])
+@app.route('/api/v1/data', methods=['GET'])
 def get_data():
     # Query MongoDB to fetch data
     data = collection.find()
