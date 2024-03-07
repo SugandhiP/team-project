@@ -49,7 +49,23 @@ def swagger():
     with open('swagger.json', 'r') as f:
         return jsonify(json.load(f))
 
-@app.route('/api/data', methods=['GET'])
+@app.route('/api/v1/search/singleCountry', methods=['POST'])
+def search_single_country():
+    reqBody = request.get_json()
+    if ('country' not in reqBody):
+        print('Error: ', reqBody)
+        return error_response(404, 'Country field is missing')
+    query = {}
+    for (key, val) in reqBody.items():
+        if (key in ['city', 'state', 'address', 'zipCode', 'name']):
+            query[key] = {"$regex": ".*" + val + ".*"}
+        elif (key == 'country'):
+            query[key] = val
+            # query[k] = {"$in": v}
+    # Get data from DB
+    result = []
+    return sucess_response(200, result)
+
 @app.route('/api/v1/data', methods=['GET'])
 def get_data():
     # Query MongoDB to fetch data
