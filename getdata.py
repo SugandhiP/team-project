@@ -20,7 +20,7 @@ swaggerui_blueprint = get_swaggerui_blueprint(
 )
 app.register_blueprint(swaggerui_blueprint, url_prefix=SWAGGER_URL)
 
-# construct an error response object
+#construct an error response object
 def error_response(code, message):
     print(code)
     print(message)
