@@ -27,8 +27,12 @@ def error_response(code, message):
     return Response(json.dumps({"error": message}), status=code, mimetype="application/json")
 
 # construct a success response object
-def sucess_response(code, content):
-    return Response(json.dumps(content), status=code, mimetype="application/json")
+def success_response(code, content, message = 'Successful operation'):
+    response_data = {
+        'message': message,
+        'data': content
+    }
+    return Response(json.dumps(response_data), status=code, mimetype="application/json")
 
 # Connect to MongoDB
 try: 
@@ -64,7 +68,7 @@ def search_single_country():
             # query[k] = {"$in": v}
     # Get data from DB
     result = []
-    return sucess_response(200, result)
+    return success_response(200, result, 'Search successful!')
 
 @app.route('/api/v1/data', methods=['GET'])
 def get_data():
@@ -103,7 +107,7 @@ def get_data():
     for country, data in country_states.items():
         json_data.append(data)
 
-    return jsonify(json_data)
+    return success_response(200, json_data, 'Successfully retrieved country, city and state list')
 
 if __name__ == '__main__':
     app.run(debug=True)
