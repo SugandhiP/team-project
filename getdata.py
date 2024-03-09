@@ -90,21 +90,17 @@ def get_data():
         if not country or not state or not city:
             continue
 
-        # Initialize the dictionary for the country if it doesn't exist
+        # Initialize dictionaries for country and state if not already present
         if country not in country_states:
-            country_states[country] = {"country": country, "states": []}
+            country_states[country] = {}
+        if state not in country_states[country]:
+            country_states[country][state] = []
 
-        # Find or create the dictionary for the state
-        state_dict = next((item for item in country_states[country]["states"] if item["state"] == state), None)
-        if state_dict is None:
-            state_dict = {"state": state, "cities": []}
-            country_states[country]["states"].append(state_dict)
-
-        # Add the city to the state dictionary
-        state_dict["cities"].append(city)
+        # Add city to the state
+        country_states[country][state].append(city)
 
     # Convert the country_states dictionary to a list
-    for country, data in country_states.items():
+    for data in country_states.items():
         json_data.append(data)
 
     return success_response(200, json_data, 'Successfully retrieved country, city and state list')
