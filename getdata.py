@@ -100,10 +100,10 @@ def get_data():
         country_states[country][state].append(city)
 
     # Convert the country_states dictionary to a list
-    for data in country_states.items():
-        json_data.append(data)
+    #for data in country_states.items():
+        #json_data.append(data)
 
-    return success_response(200, json_data, 'Successfully retrieved country, city and state list')
+    return success_response(200, country_states, 'Successfully retrieved country, city and state list')
 
 if __name__ == '__main__':
     app.run(debug=True)
