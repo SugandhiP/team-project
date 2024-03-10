@@ -1,7 +1,7 @@
 [
     {
         "name": "Phoebe Moore",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Blekinge",
         "city": "Stockholm",
         "zipCode": "418 62",
@@ -9,7 +9,7 @@
     },
     {
         "name": "Terrell Wilcox",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Bohusl�n",
         "city": "Gothenburg",
         "zipCode": "934 09",
@@ -17,7 +17,7 @@
     },
     {
         "name": "Julissa Cohen",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Dalarna�",
         "city": "Malm�",
         "zipCode": "712 22",
@@ -25,7 +25,7 @@
     },
     {
         "name": "Arjun Marks",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Dalsland",
         "city": "Uppsala",
         "zipCode": "466 83",
@@ -33,7 +33,7 @@
     },
     {
         "name": "Aniya Mcintyre",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Gotland�",
         "city": "Norrk�ping",
         "zipCode": "751 60",
@@ -41,7 +41,7 @@
     },
     {
         "name": "Belen Lawson",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "G�strikland",
         "city": "Uppsala",
         "zipCode": "101 00",
@@ -49,7 +49,7 @@
     },
     {
         "name": "Ashtyn Hunter",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Halland",
         "city": "V�ster�s",
         "zipCode": "763 72",
@@ -57,7 +57,7 @@
     },
     {
         "name": "Patience Wilkinson",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "H�lsingland",
         "city": "�rebro",
         "zipCode": "103 45",
@@ -65,7 +65,7 @@
     },
     {
         "name": "Shyann Poole",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "H�rjedalen",
         "city": "Link�ping",
         "zipCode": "591 23",
@@ -73,7 +73,7 @@
     },
     {
         "name": "Annie Chan",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "J�mtland",
         "city": "Helsingborg",
         "zipCode": "448 94",
@@ -81,7 +81,7 @@
     },
     {
         "name": "Bella Proctor",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Lappland",
         "city": "J�nk�ping",
         "zipCode": "591 84",
@@ -89,7 +89,7 @@
     },
     {
         "name": "Kamila Eaton",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Medelpad",
         "city": "Vimmerby",
         "zipCode": "927 19",
@@ -97,7 +97,7 @@
     },
     {
         "name": "Tristian Morton",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Norrbotten",
         "city": "Sundsvall",
         "zipCode": "742 80",
@@ -105,7 +105,7 @@
     },
     {
         "name": "Miriam Lynch",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "N�rke�",
         "city": "G�vle",
         "zipCode": "863 57",
@@ -113,7 +113,7 @@
     },
     {
         "name": "Karen Lawson",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Sk�ne�",
         "city": "Ume�",
         "zipCode": "236 52",
@@ -121,7 +121,7 @@
     },
     {
         "name": "Lorena Strickland",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Blekinge",
         "city": "Karlstad",
         "zipCode": "340 08",
@@ -129,7 +129,7 @@
     },
     {
         "name": "Amber Cisneros",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Bohusl�n",
         "city": "S�dert�lje",
         "zipCode": "605 31",
@@ -137,7 +137,7 @@
     },
     {
         "name": "Prince Aguirre",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Blekinge",
         "city": "Halmstad",
         "zipCode": "393 36",
@@ -145,7 +145,7 @@
     },
     {
         "name": "Larissa Simpson",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Bohusl�n",
         "city": "Eskilstuna",
         "zipCode": "856 53",
@@ -153,7 +153,7 @@
     },
     {
         "name": "Deborah Mercado",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Dalarna�",
         "city": "Karlskrona",
         "zipCode": "455 98",
@@ -161,7 +161,7 @@
     },
     {
         "name": "Daniel Leonard",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Dalsland",
         "city": "V�xj�",
         "zipCode": "623 84",
@@ -169,7 +169,7 @@
     },
     {
         "name": "Ashlyn Singleton",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Gotland�",
         "city": "Bor�s",
         "zipCode": "590 96",
@@ -177,7 +177,7 @@
     },
     {
         "name": "Leslie Dickson",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "G�strikland",
         "city": "T�by",
         "zipCode": "503 42",
@@ -185,7 +185,7 @@
     },
     {
         "name": "Lauryn Welch",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Halland",
         "city": "Trollh�ttan",
         "zipCode": "544 19",
@@ -193,7 +193,7 @@
     },
     {
         "name": "Keegan Price",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "H�lsingland",
         "city": "�stersund",
         "zipCode": "246 99",
@@ -201,7 +201,7 @@
     },
     {
         "name": "Abigayle Drake",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "H�rjedalen",
         "city": "Lule�",
         "zipCode": "293 11",
@@ -209,7 +209,7 @@
     },
     {
         "name": "Jadiel Escobar",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "J�mtland",
         "city": "Upplands V�sby",
         "zipCode": "165 42",
@@ -217,7 +217,7 @@
     },
     {
         "name": "Ruth Bowen",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Lappland",
         "city": "Stockholm",
         "zipCode": "279 05",
@@ -225,7 +225,7 @@
     },
     {
         "name": "Finnegan Chang",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Medelpad",
         "city": "Gothenburg",
         "zipCode": "417 39",
@@ -233,7 +233,7 @@
     },
     {
         "name": "Emilia Spears",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Norrbotten",
         "city": "Malm�",
         "zipCode": "933 26",
@@ -241,7 +241,7 @@
     },
     {
         "name": "Aditya Skinner",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "N�rke�",
         "city": "Uppsala",
         "zipCode": "970 66",
@@ -249,7 +249,7 @@
     },
     {
         "name": "Jaycee Whitehead",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Sk�ne�",
         "city": "Norrk�ping",
         "zipCode": "721 85",
@@ -257,7 +257,7 @@
     },
     {
         "name": "Anabella Phillips",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Blekinge",
         "city": "Uppsala",
         "zipCode": "269 95",
@@ -265,7 +265,7 @@
     },
     {
         "name": "Zaid Benitez",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Bohusl�n",
         "city": "V�ster�s",
         "zipCode": "402 39",
@@ -273,7 +273,7 @@
     },
     {
         "name": "Shaniya Rose",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Blekinge",
         "city": "�rebro",
         "zipCode": "194 58",
@@ -281,7 +281,7 @@
     },
     {
         "name": "Misael Rowe",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Bohusl�n",
         "city": "Link�ping",
         "zipCode": "590 51",
@@ -289,7 +289,7 @@
     },
     {
         "name": "Shyla Nguyen",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Dalarna�",
         "city": "Helsingborg",
         "zipCode": "180 86",
@@ -297,7 +297,7 @@
     },
     {
         "name": "Ruth Olson",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Dalsland",
         "city": "J�nk�ping",
         "zipCode": "808 73",
@@ -305,7 +305,7 @@
     },
     {
         "name": "Kristina Brennan",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Gotland�",
         "city": "Vimmerby",
         "zipCode": "727 00",
@@ -313,7 +313,7 @@
     },
     {
         "name": "Bridget Parrish",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "G�strikland",
         "city": "Sundsvall",
         "zipCode": "714 14",
@@ -321,7 +321,7 @@
     },
     {
         "name": "Dangelo Knight",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Halland",
         "city": "G�vle",
         "zipCode": "340 34",
@@ -329,7 +329,7 @@
     },
     {
         "name": "Jamie Fletcher",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "H�lsingland",
         "city": "Ume�",
         "zipCode": "435 21",
@@ -337,7 +337,7 @@
     },
     {
         "name": "Davion Wolfe",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "H�rjedalen",
         "city": "Karlstad",
         "zipCode": "369 88",
@@ -345,7 +345,7 @@
     },
     {
         "name": "Kristina Pineda",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "J�mtland",
         "city": "S�dert�lje",
         "zipCode": "554 45",
@@ -353,7 +353,7 @@
     },
     {
         "name": "Andreas Bird",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Lappland",
         "city": "Halmstad",
         "zipCode": "462 66",
@@ -361,7 +361,7 @@
     },
     {
         "name": "Haven Baxter",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Medelpad",
         "city": "Eskilstuna",
         "zipCode": "511 49",
@@ -369,7 +369,7 @@
     },
     {
         "name": "Jada Russo",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Norrbotten",
         "city": "Karlskrona",
         "zipCode": "948 57",
@@ -377,7 +377,7 @@
     },
     {
         "name": "Alia Hawkins",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "N�rke�",
         "city": "V�xj�",
         "zipCode": "760 88",
@@ -385,7 +385,7 @@
     },
     {
         "name": "Braedon Huerta",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Sk�ne�",
         "city": "Bor�s",
         "zipCode": "526 64",
@@ -393,7 +393,7 @@
     },
     {
         "name": "Kyra Crosby",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Blekinge",
         "city": "T�by",
         "zipCode": "602 95",
@@ -401,7 +401,7 @@
     },
     {
         "name": "Shyanne Cisneros",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Bohusl�n",
         "city": "Trollh�ttan",
         "zipCode": "905 56",
@@ -409,7 +409,7 @@
     },
     {
         "name": "Charlee Walker",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Blekinge",
         "city": "�stersund",
         "zipCode": "197 33",
@@ -417,7 +417,7 @@
     },
     {
         "name": "Pamela Mccormick",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Bohusl�n",
         "city": "Lule�",
         "zipCode": "454 69",
@@ -425,7 +425,7 @@
     },
     {
         "name": "Annabel Villegas",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Dalarna�",
         "city": "Upplands V�sby",
         "zipCode": "862 25",
@@ -433,7 +433,7 @@
     },
     {
         "name": "Jazlene Cook",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Dalsland",
         "city": "Stockholm",
         "zipCode": "388 70",
@@ -441,7 +441,7 @@
     },
     {
         "name": "Alannah Mcdowell",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Gotland�",
         "city": "Gothenburg",
         "zipCode": "929 89",
@@ -449,7 +449,7 @@
     },
     {
         "name": "Braden Buck",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "G�strikland",
         "city": "Malm�",
         "zipCode": "619 83",
@@ -457,7 +457,7 @@
     },
     {
         "name": "Rogelio Gibbs",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Halland",
         "city": "Uppsala",
         "zipCode": "185 70",
@@ -465,7 +465,7 @@
     },
     {
         "name": "Teagan Pruitt",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "H�lsingland",
         "city": "Norrk�ping",
         "zipCode": "453 57",
@@ -473,7 +473,7 @@
     },
     {
         "name": "Yareli Harper",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "H�rjedalen",
         "city": "Uppsala",
         "zipCode": "953 47",
@@ -481,7 +481,7 @@
     },
     {
         "name": "Susan Higgins",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "J�mtland",
         "city": "V�ster�s",
         "zipCode": "408 28",
@@ -489,7 +489,7 @@
     },
     {
         "name": "Laylah Ryan",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Lappland",
         "city": "�rebro",
         "zipCode": "266 11",
@@ -497,7 +497,7 @@
     },
     {
         "name": "Jaylee Thompson",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Medelpad",
         "city": "Link�ping",
         "zipCode": "806 94",
@@ -505,7 +505,7 @@
     },
     {
         "name": "Celeste Cummings",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Norrbotten",
         "city": "Helsingborg",
         "zipCode": "663 90",
@@ -513,7 +513,7 @@
     },
     {
         "name": "Taylor Fowler",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "N�rke�",
         "city": "J�nk�ping",
         "zipCode": "146 16",
@@ -521,7 +521,7 @@
     },
     {
         "name": "Raegan Nguyen",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Sk�ne�",
         "city": "Vimmerby",
         "zipCode": "726 10",
@@ -529,7 +529,7 @@
     },
     {
         "name": "Darren Leach",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Blekinge",
         "city": "Sundsvall",
         "zipCode": "994 24",
@@ -537,7 +537,7 @@
     },
     {
         "name": "Austin Carney",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Bohusl�n",
         "city": "G�vle",
         "zipCode": "492 21",
@@ -545,7 +545,7 @@
     },
     {
         "name": "Lee Joyce",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Blekinge",
         "city": "Ume�",
         "zipCode": "392 81",
@@ -553,7 +553,7 @@
     },
     {
         "name": "Landen Chung",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Bohusl�n",
         "city": "Karlstad",
         "zipCode": "239 29",
@@ -561,7 +561,7 @@
     },
     {
         "name": "Jacob Nielsen",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Dalarna�",
         "city": "S�dert�lje",
         "zipCode": "471 77",
@@ -569,7 +569,7 @@
     },
     {
         "name": "Ayanna Holmes",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Dalsland",
         "city": "Halmstad",
         "zipCode": "292 50",
@@ -577,7 +577,7 @@
     },
     {
         "name": "Jeremy Navarro",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Gotland�",
         "city": "Eskilstuna",
         "zipCode": "875 89",
@@ -585,7 +585,7 @@
     },
     {
         "name": "German Riley",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "G�strikland",
         "city": "Karlskrona",
         "zipCode": "108 77",
@@ -593,7 +593,7 @@
     },
     {
         "name": "Haylie Burgess",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Halland",
         "city": "V�xj�",
         "zipCode": "666 30",
@@ -601,7 +601,7 @@
     },
     {
         "name": "Israel Rhodes",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "H�lsingland",
         "city": "Bor�s",
         "zipCode": "116 64",
@@ -609,7 +609,7 @@
     },
     {
         "name": "Brendan Ponce",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "H�rjedalen",
         "city": "T�by",
         "zipCode": "203 55",
@@ -617,7 +617,7 @@
     },
     {
         "name": "Ivy Hancock",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "J�mtland",
         "city": "Trollh�ttan",
         "zipCode": "101 70",
@@ -625,7 +625,7 @@
     },
     {
         "name": "Jared Mccall",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Lappland",
         "city": "�stersund",
         "zipCode": "290 17",
@@ -633,7 +633,7 @@
     },
     {
         "name": "Aden Guerrero",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Medelpad",
         "city": "Lule�",
         "zipCode": "646 44",
@@ -641,7 +641,7 @@
     },
     {
         "name": "Damian Grimes",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Norrbotten",
         "city": "Upplands V�sby",
         "zipCode": "838 53",
@@ -649,7 +649,7 @@
     },
     {
         "name": "Andreas Rosales",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "N�rke�",
         "city": "Stockholm",
         "zipCode": "337 91",
@@ -657,7 +657,7 @@
     },
     {
         "name": "Brice Sweeney",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Sk�ne�",
         "city": "Gothenburg",
         "zipCode": "820 23",
@@ -665,7 +665,7 @@
     },
     {
         "name": "Cesar Dillon",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Blekinge",
         "city": "Stockholm",
         "zipCode": "436 49",
@@ -673,7 +673,7 @@
     },
     {
         "name": "Tristen Lam",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Bohusl�n",
         "city": "Gothenburg",
         "zipCode": "887 36",
@@ -681,7 +681,7 @@
     },
     {
         "name": "Landyn Keller",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Blekinge",
         "city": "Malm�",
         "zipCode": "558 30",
@@ -689,7 +689,7 @@
     },
     {
         "name": "Anton Bennett",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Bohusl�n",
         "city": "Uppsala",
         "zipCode": "788 90",
@@ -697,7 +697,7 @@
     },
     {
         "name": "Claire Sandoval",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Dalarna�",
         "city": "Norrk�ping",
         "zipCode": "745 40",
@@ -705,7 +705,7 @@
     },
     {
         "name": "Jaslene Steele",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Dalsland",
         "city": "Uppsala",
         "zipCode": "554 20",
@@ -713,7 +713,7 @@
     },
     {
         "name": "Simeon Perez",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Gotland�",
         "city": "V�ster�s",
         "zipCode": "539 18",
@@ -721,7 +721,7 @@
     },
     {
         "name": "Hailey Hartman",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "G�strikland",
         "city": "�rebro",
         "zipCode": "131 25",
@@ -729,7 +729,7 @@
     },
     {
         "name": "Elise Malone",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Halland",
         "city": "Link�ping",
         "zipCode": "452 32",
@@ -737,7 +737,7 @@
     },
     {
         "name": "Jaelyn Preston",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "H�lsingland",
         "city": "Helsingborg",
         "zipCode": "746 36",
@@ -745,7 +745,7 @@
     },
     {
         "name": "Ernest Rivers",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "H�rjedalen",
         "city": "J�nk�ping",
         "zipCode": "192 68",
@@ -753,7 +753,7 @@
     },
     {
         "name": "Antony Conner",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "J�mtland",
         "city": "Vimmerby",
         "zipCode": "563 90",
@@ -761,7 +761,7 @@
     },
     {
         "name": "Chance Estes",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Lappland",
         "city": "Sundsvall",
         "zipCode": "935 32",
@@ -769,7 +769,7 @@
     },
     {
         "name": "Kyler Byrd",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Medelpad",
         "city": "G�vle",
         "zipCode": "930 90",
@@ -777,7 +777,7 @@
     },
     {
         "name": "Shiloh May",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Norrbotten",
         "city": "Ume�",
         "zipCode": "132 58",
@@ -785,7 +785,7 @@
     },
     {
         "name": "Kadin Glass",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "N�rke�",
         "city": "Karlstad",
         "zipCode": "271 85",
@@ -793,7 +793,7 @@
     },
     {
         "name": "Kyler Spears",
-        "country": " Sweden",
+        "country": "Sweden",
         "state": "Sk�ne�",
         "city": "S�dert�lje",
         "zipCode": "158 98",
