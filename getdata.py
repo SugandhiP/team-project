@@ -1,4 +1,5 @@
 from flask import Flask, jsonify, request, Response
+from flask_cors import CORS
 from pymongo import MongoClient 
 from bson.json_util import dumps
 from collections import defaultdict
@@ -8,6 +9,7 @@ from flask_swagger_ui import get_swaggerui_blueprint
 import re
 
 app = Flask(__name__)
+CORS(app)
 
 # Configure Swagger UI
 SWAGGER_URL = '/swagger'
