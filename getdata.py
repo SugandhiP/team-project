@@ -24,10 +24,6 @@ swaggerui_blueprint = get_swaggerui_blueprint(
 )
 app.register_blueprint(swaggerui_blueprint, url_prefix=SWAGGER_URL)
 
-@app.route("/swagger.json")
-def swagger_json():
-    return jsonify(swagger(app))
-
 #construct an error response object
 def error_response(code, message):
     print(code)
