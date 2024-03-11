@@ -1,0 +1,167 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "title": "Address Search application",
+      "description": "A python server that provides API to retrieve addresses based on search criteria",
+      "version": "1.0"
+    },
+    "basePath": "/api/v1",
+    "schemes": [
+      "http"
+    ],
+    "consumes": [
+      "application/json"
+    ],
+    "produces": [
+      "application/json"
+    ],
+    "definitions": {
+      "addressArray": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/address"
+        }
+      },
+      "address": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "example": "John"
+          },
+          "country": {
+            "type": "string",
+            "example": "USA"
+          },
+          "state": {
+            "type": "string",
+            "example": "Alabama"
+          },
+          "city": {
+            "type": "string",
+            "example": "Opelika"
+          },
+          "zip_code": {
+            "type": "string",
+            "example": "36801"
+          },
+          "address": {
+            "type": "string",
+            "example": "2900 Pepperrell Pkwy"
+          }
+        }
+      }
+    },
+    "paths": {
+      "/search/singleCountry": {
+        "post": {
+          "summary": "This API returns addresses based out in specific country based on the search criteria",
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "in": "body",
+              "name": "body",
+              "description": "Request body containing the search criteria. Country and name are the mandatory fields. Rest all the fields are optional",
+              "required": false,
+              "schema": {
+                "example": {
+                    "name":"Melody",
+                    "country": "USA",
+                    "state": " Maine",
+                    "city": " East Jeffery"
+                }
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "An array of searched addresses",
+              "schema": {
+                "$ref": "#/definitions/addressArray"
+              },
+              "examples": {
+                "application/json": "{\n  \"message\": \"Search successful!\",\n  \"data\": [\n    {\n      \"name\": \"Melody Sweeney\",\n      \"country\": \"USA\",\n      \"state\": \" Maine\",\n      \"city\": \" East Jeffery\",\n      \"zipCode\": \"99888\",\n      \"address\": \"1466 Annie Shoal\"\n    }\n  ]\n}"
+              }
+            },
+            "404": {
+              "description": "No record found for the search criteria",
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "message": {
+                    "type": "string",
+                    "value": "No result found"
+                  },
+                  "status_code": {
+                    "type": "string",
+                    "value": "404"
+                  }
+                }
+              },
+              "examples": {
+                "application/json": "{\r\n    \"message\": \"No Addresses Found!\",\r\n    \"data\": []\r\n}"
+              }
+            }
+          }
+        }
+      },
+      "/search/multiCountry": {
+        "post": {
+          "summary": "This API returns addresses from multiple countries on the search criteria",
+          "produces": [
+            "application/json"
+          ],
+          "parameters": [
+            {
+              "in": "body",
+              "name": "body",
+              "description": "Request body containing the search criteria.",
+              "required": false,
+              "schema": {
+                "example": {
+                    "name": "a",
+                    "countries": [
+                        "USA",
+                        "India"
+                    ],
+                    "state": "min"
+                }
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "An array of searched addresses across multiple countries",
+              "schema": {
+                "$ref": "#/definitions/addressArray"
+              },
+              "examples": {
+                "application/json": "{\r\n    \"message\": \"Search successful!\",\r\n    \"data\": [\r\n        {\r\n            \"name\": \"Aaden Ortega\",\r\n            \"country\": \"USA\",\r\n            \"state\": \" Minnesota\",\r\n            \"city\": \" East Neva\",\r\n            \"zipCode\": \"76309\",\r\n            \"address\": \"649 Sabryna Rapids\"\r\n        },\r\n        {\r\n            \"name\": \"Beau Gay\",\r\n            \"country\": \"USA\",\r\n            \"state\": \" Wyoming\",\r\n            \"city\": \" Lake Leoneland\",\r\n            \"zipCode\": \" 96063-1614\",\r\n            \"address\": \"911 Scotty Orchard\"\r\n        },\r\n        {\r\n            \"name\": \"Chace Rivera\",\r\n            \"country\": \"USA\",\r\n            \"state\": \" Wyoming\",\r\n            \"city\": \" North Reymundo\",\r\n            \"zipCode\": \"86755\",\r\n            \"address\": \"2788 Adriana Court\"\r\n        }\r\n    ]\r\n}"
+              }
+            },
+            "404": {
+              "description": "No record found for the search criteria",
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "message": {
+                    "type": "string",
+                    "value": "No result found"
+                  },
+                  "status_code": {
+                    "type": "string",
+                    "value": "404"
+                  }
+                }
+              },
+              "examples": {
+                "application/json": "{\n  \"message\": \"No records found for the search criteria\",\n  \"status_code\": \"404\"\n}"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
