@@ -1,6 +1,5 @@
 from flask import Flask, jsonify, request, Response
 from flask_cors import CORS
-import pymongo
 from pymongo import MongoClient 
 from bson.json_util import dumps
 from collections import defaultdict
@@ -12,15 +11,6 @@ import re
 app = Flask(__name__)
 CORS(app)
 
-# testData = {
-#     "name": "Luz Burns",
-#     "country": "India",
-#     #"countries": null,
-#     "state": "Maharashtra",
-#     "city": "Vasai-Virar",
-#     "zipCode": "522530",
-#     "address": "Brahmanapalle - Regulagadda Road"
-# }
 
 # Configure Swagger UI
 SWAGGER_URL = '/swagger'
@@ -33,6 +23,10 @@ swaggerui_blueprint = get_swaggerui_blueprint(
     }
 )
 app.register_blueprint(swaggerui_blueprint, url_prefix=SWAGGER_URL)
+
+@app.route("/swagger.json")
+def swagger_json():
+    return jsonify(swagger(app))
 
 #construct an error response object
 def error_response(code, message):
@@ -48,32 +42,6 @@ def success_response(code, content, message = 'Successful operation'):
     }
     return Response(json.dumps(response_data), status=code, mimetype="application/json")
 
-def prepare_query(reqBody, query):
-    # Get query parameters from the request
-    name = reqBody.get('name')
-    country = reqBody.get('country')
-    state = reqBody.get('state')
-    city = reqBody.get('city')
-    zipCode = reqBody.get('zipCode')
-    address = reqBody.get('address')
-    # Prepare query based on provided parameters
-    if country is not None and country != "":
-        query['country'] = {'$regex': country.strip(), '$options': 'i'} 
-    if state is not None and state != "":
-        query['state'] = {'$regex': re.escape(state.strip()), '$options': 'i'}
-    if city is not None and city != "":
-        query['city'] = {'$regex': re.escape(city.strip()), '$options': 'i'} 
-    if zipCode is not None and zipCode != "":
-        query['zipCode'] = {'$regex': f'.*{re.escape(zipCode.strip())}.*', '$options': 'i'}
-    if name:
-        # regex = f'^{re.escape(name)}' #not strict match John Smith and Johnathan both allowed
-        # query['name'] = {'$regex': regex, '$options':'i'}
-        query['name'] = {'$regex': f'.*{re.escape(name.strip())}.*', '$options': 'i'}
-
-    #Prepare regex pattern for partial address search
-    if address is not None and address != "":
-        query['address'] = {'$regex': f'.*{re.escape(address.strip())}.*', '$options': 'i'}
-    return query
 
 # Connect to MongoDB
 try: 
@@ -87,10 +55,6 @@ db = conn.swa_address_search_engine
 
 # Created or Switched to collection names: myTable 
 collection = db.address_collection      
-
-#optimize query
-# collection.create_index([("country", pymongo.ASCENDING)])
-# collection.create_index([("name", pymongo.ASCENDING)])
 
 @app.route('/swagger.json')
 def swagger():
@@ -130,8 +94,6 @@ def search_single_country():
     if city:
         query['city'] = {'$regex': re.escape(city.strip()), '$options': 'i'} 
     if zipCode is not None and zipCode != "":
-        # regex = f'^{re.escape(zipCode.strip())}' #not strict match
-        # query['zipCode'] = {'$regex': regex}
         query['zipCode'] = {'$regex': f'.*{re.escape(zipCode.strip())}.*', '$options': 'i'}
     if name:
         regex = f'^{re.escape(name)}' #not strict match John Smith and Johnathan both allowed
@@ -169,7 +131,8 @@ def search_multi_country():
     # # Get query parameters from the request
     name = reqBody.get('name')
     countries = []
-    countries = reqBody.get('countries')
+    #countries = reqBody.get('countries')
+    country = reqBody.get('countries')
     state = reqBody.get('state')
     city = reqBody.get('city')
     zipCode = reqBody.get('zipCode')
@@ -177,56 +140,30 @@ def search_multi_country():
 
     # Initialize a dictionary to group states by country
     query = {}
-    search_result = []
 
-    if not reqBody['countries']:
-        countries = {"USA","UK","Canada","India","Spain","Germany","Sweden","Japan","Brazil","Mexico","South Korea"} 
+    # Prepare query based on provided parameters
+    if country is not None and country != "":
+        query['country'] = {'$in': country} 
+        #query['country'] = {'$regex': country.strip(), '$options': 'i'} 
+    if state is not None and state != "":
+        query['state'] = {'$regex': re.escape(state.strip()), '$options': 'i'}
+    if city is not None and city != "":
+        query['city'] = {'$regex': re.escape(city.strip()), '$options': 'i'} 
+    if zipCode is not None and zipCode != "":
+        query['zipCode'] = {'$regex': f'.*{re.escape(zipCode.strip())}.*', '$options': 'i'}
+    if name:
+        query['name'] = {'$regex': f'.*{re.escape(name.strip())}.*', '$options': 'i'} #not strict match John Smith and Johnathan both allowed
 
-    for country in countries:
-        query = {'country': country}
-    
-        # Prepare query based on provided parameters
-        if country is not None and country != "":
-            query['country'] = {'$regex': country.strip(), '$options': 'i'} 
-        if state is not None and state != "":
-            query['state'] = {'$regex': re.escape(state.strip()), '$options': 'i'}
-        if city is not None and city != "":
-            query['city'] = {'$regex': re.escape(city.strip()), '$options': 'i'} 
-        if zipCode is not None and zipCode != "":
-            query['zipCode'] = {'$regex': f'.*{re.escape(zipCode.strip())}.*', '$options': 'i'}
-        if name:
-            # regex = f'^{re.escape(name)}' #not strict match John Smith and Johnathan both allowed
-            # query['name'] = {'$regex': regex, '$options':'i'}
-            query['name'] = {'$regex': f'.*{re.escape(name.strip())}.*', '$options': 'i'}
+    #Prepare regex pattern for partial address search
+    if address is not None and address != "":
+        query['address'] = {'$regex': f'.*{re.escape(address.strip())}.*', '$options': 'i'}
 
-        #Prepare regex pattern for partial address search
-        if address is not None and address != "":
-            query['address'] = {'$regex': f'.*{re.escape(address.strip())}.*', '$options': 'i'}
-    
-        #query = prepare_query(reqBody, query)
+    result = list(collection.find(query, {'_id': 0}).limit(200))    
 
-        # # Count the number of matching documents
-        # result_count = result_count + collection.count_documents(query)    
-
-        # print("count ",result_count)
-
-        # Limit the number of documents returned if it exceeds 200
-        # if result_count > 200:
-        #     print("Inside loop ",result_count)
-        #     result = list(collection.find(query, {'_id': 0}))
-        #     search_result.extend(result)
-        #     return success_response(200, result, 'Search successful!')
-        # else:
-        #     result = list(collection.find(query, {'_id': 0}))
-        print(query)
-        result = list(collection.find(query, {'_id': 0}))
-        #print(result)
-        search_result.extend(result)    
-
-    if not search_result:
+    if not result:
         return success_response(200, [], 'No Addresses Found!')
     
-    return success_response(200, search_result[:200], 'Search successful!')
+    return success_response(200, result, 'Search successful!')
 
 @app.route('/api/v1/data', methods=['GET'])
 def get_data():
