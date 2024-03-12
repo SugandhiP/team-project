@@ -93,7 +93,7 @@ def search_single_country():
         query['zipCode'] = {'$regex': f'.*{re.escape(zipCode.strip())}.*', '$options': 'i'}
     if name:
         regex = f'^{re.escape(name)}' #not strict match John Smith and Johnathan both allowed
-        query['name'] = {'$regex': regex, '$options': 'i'}
+        query['name'] = {'$regex': f'.*{re.escape(name.strip())}.*', '$options': 'i'}
 
     # Prepare regex pattern for partial address search
     if address is not None and address != "":
